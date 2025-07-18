@@ -493,8 +493,7 @@ body strong {
 
 .breadcrumbs {
   display: flex;
-  margin-top: -10px;
-  padding-bottom: 37px;
+  margin-top: 25px;
   position: relative;
   /*
   &::before {
@@ -520,40 +519,30 @@ body strong {
 }
 
 .breadcrumbs__item {
-  font-size: 14px;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 130%;
   list-style: none;
   margin-bottom: 3px;
   margin-top: 3px;
   position: relative;
   text-align: left;
-  text-transform: uppercase;
-}
-
-.breadcrumbs__item:not(:last-child) {
-  margin-right: 38px;
+  text-transform: capitalize;
 }
 
 .breadcrumbs__item:not(:last-child)::after {
   align-items: center;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M10.5 6L13.5 9M13.5 9L10.5 12M13.5 9L4.5 9' stroke='%23838A98' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  height: 18px;
+  color: #fff;
+  content: "/";
   display: inline-flex;
   justify-content: center;
-  position: absolute;
-  right: -9px;
-  top: 6px;
-  transform: translateX(100%);
+  margin: 0 0 0 -10px;
   width: 18px;
 }
 
 .breadcrumbs__name {
-  color: #838A98;
+  color: #BDB8FF;
   max-width: 255px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -564,7 +553,7 @@ body strong {
 }
 
 .breadcrumbs__link {
-  color: #292E37;
+  color: #fff;
   position: relative;
   text-decoration: none;
 }
@@ -1942,8 +1931,8 @@ body._touch .header .menu__list > li._active .menu__arrow {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 0 26%;
-     object-position: 0 26%;
+  -o-object-position: 50% 26%;
+     object-position: 50% 26%;
   pointer-events: none;
   position: absolute;
   top: 0;
@@ -2889,6 +2878,118 @@ body._touch .header .menu__list > li._active .menu__arrow {
   padding-left: 67px;
 }
 
+/* Page - Contact */
+
+.contact-page .first-screen {
+  padding-bottom: 80px;
+  padding-top: 180px;
+}
+
+.contact-page .first-screen__block {
+  width: 437px;
+}
+
+.contact-page .first-screen__bg {
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+
+.get-in-touch {
+  padding-bottom: 100px;
+  padding-top: 113px;
+  position: relative;
+}
+
+.get-in-touch .n_container {
+  position: relative;
+  z-index: 1;
+}
+
+.get-in-touch__blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.get-in-touch__block {
+  background-color: #fff;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.16);
+  margin-bottom: 20px;
+  padding: 0 15px 27px;
+}
+
+.get-in-touch__block .wrap-icon {
+  align-items: center;
+  background-color: #EEA745;
+  height: 81px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 21px;
+  width: 81px;
+}
+
+.get-in-touch__block h4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  margin: 0;
+  text-align: center;
+}
+
+.get-in-touch__block p {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  margin-top: 7px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.get-in-touch__block p a {
+  color: inherit;
+}
+
+.get-in-touch__item .contact-us__wrap-form {
+  margin-top: 0;
+}
+
+.get-in-touch__blockImage {
+  min-height: 500px;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.get-in-touch__blockImage img {
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.get-in-touch__blockImage::before {
+  background: linear-gradient(124.02deg, rgba(238, 167, 69, 0) 0%, #0C0653 100%);
+  content: "";
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.get-in-touch__illustration {
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 /* Footer */
 
 .footer {
@@ -3057,6 +3158,16 @@ body._touch .header .menu__list > li._active .menu__arrow {
     transform: translate(-50%, -50%);
   }
 
+  .get-in-touch__blocks {
+    margin: 60px -10px 0;
+  }
+
+  .get-in-touch__block {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(50% - 20px);
+  }
+
   .footer__item:nth-child(2) {
     display: flex;
     justify-content: space-around;
@@ -3189,6 +3300,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     min-height: 700px;
   }
 
+  .get-in-touch__block {
+    width: calc(25% - 20px);
+  }
+
   .footer__item:nth-child(1) {
     width: 340px;
   }
@@ -3227,6 +3342,26 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .faq__item:nth-child(2) {
     width: 48%;
+  }
+
+  .get-in-touch__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+
+  .get-in-touch__item {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .get-in-touch__item:nth-child(1) {
+    width: calc(50% - 24px);
+  }
+
+  .get-in-touch__item:nth-child(2) {
+    width: calc(50% - 24px);
   }
 }
 
@@ -3488,6 +3623,16 @@ body._touch .header .menu__list > li._active .menu__arrow {
 @media screen and (min-width: 1101px) and (min-width: 1101px) {
   .header .menu__body-footer {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .get-in-touch__item:nth-child(1) {
+    width: calc(45% - 23px);
+  }
+
+  .get-in-touch__item:nth-child(2) {
+    width: calc(55% - 25px);
   }
 }
 
@@ -3994,10 +4139,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (max-width: 1024px) {
-  .breadcrumbs {
-    margin-top: 7px;
-  }
-
   .n_container {
     padding-left: 30px;
     padding-right: 30px;
@@ -4015,6 +4156,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
     height: 40px;
     width: auto;
   }
+
+  .contact-page .first-screen__bg {
+    -o-object-position: 65% 50%;
+       object-position: 65% 50%;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -4023,6 +4169,16 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .faq__item:nth-child(2) {
+    display: none;
+  }
+
+  .get-in-touch__item .contact-us__wrap-form .contact-us__wrap-button .n_btn,
+  .get-in-touch__item .contact-us__wrap-form .contact-us__wrap-button button,
+  .get-in-touch__item .contact-us__wrap-form .contact-us__wrap-button input[type=submit] {
+    margin: 0;
+  }
+
+  .get-in-touch__blockImage {
     display: none;
   }
 }
@@ -4152,6 +4308,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .its-easy__blockVideoWrapButton button {
     height: 54px;
   }
+
+  .get-in-touch {
+    padding-top: 70px;
+  }
 }
 
 @media screen and (max-width: 640.98px) {
@@ -4169,14 +4329,8 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-bottom: 12px;
   }
 
-  .breadcrumbs {
-    justify-content: center;
-    margin-top: 3px;
-    padding-bottom: 17px;
-  }
-
   .breadcrumbs__item {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .n_container {
@@ -4528,6 +4682,28 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding-left: 44px;
   }
 
+  .contact-page .first-screen {
+    padding-bottom: 60px;
+    padding-top: 160px;
+  }
+
+  .get-in-touch {
+    padding-bottom: 40px;
+    padding-top: 41px;
+  }
+
+  .get-in-touch__blocks {
+    flex-direction: column-reverse;
+    margin-bottom: 8px;
+    margin-top: 27px;
+  }
+
+  .get-in-touch__item .contact-us__wrap-form .contact-us__wrap-button .n_btn,
+  .get-in-touch__item .contact-us__wrap-form .contact-us__wrap-button button,
+  .get-in-touch__item .contact-us__wrap-form .contact-us__wrap-button input[type=submit] {
+    margin: 26px auto 0;
+  }
+
   .footer {
     padding-top: 65px;
   }
@@ -4565,6 +4741,15 @@ body._touch .header .menu__list > li._active .menu__arrow {
 @media screen and (max-width: 480.98px) {
   .contact-us__wrap-button .wrap-icon {
     margin-left: 20px;
+  }
+
+  .contact-page .first-screen__block {
+    width: 100%;
+  }
+
+  .get-in-touch .n_sec-title {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .footer__wrap-social {
