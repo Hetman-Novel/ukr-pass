@@ -557,6 +557,7 @@ body strong {
   color: #fff;
   position: relative;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .n_container {
@@ -2558,7 +2559,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   justify-content: center;
   flex-direction: column;
   height: 86px;
-  padding: 18px 15px;
+  padding: 19px 15px;
   position: relative;
   width: 100%;
 }
@@ -2576,7 +2577,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   cursor: pointer;
   left: 0;
   opacity: 0;
-  position: absolute;
+  position: absolute !important;
   right: 0;
   top: 0;
 }
@@ -3607,6 +3608,9 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .our-price {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
   padding-top: 104px;
 }
 
@@ -3666,6 +3670,791 @@ body._touch .header .menu__list > li._active .menu__arrow {
   padding: 3px 0 3px 8px;
   text-align: right;
   white-space: nowrap;
+}
+
+/* Page - Prising */
+
+.prising-page .first-screen {
+  padding-bottom: 80px;
+  padding-top: 180px;
+}
+
+.prising-page .first-screen__block {
+  width: 810px;
+}
+
+.start-your-check-now {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F1F1FF 100%);
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.start-your-check-now .wrap-choose-service .start-your-check-now__title-step {
+  margin-top: 60px;
+}
+
+.start-your-check-now .wrap-choose-service label::after {
+  border-top: 1px dashed #0C0653;
+  content: "";
+  display: block;
+  height: 0;
+  left: 80px;
+  position: absolute;
+  right: 50px;
+  top: calc(50% + 4px);
+  width: calc(100% - 132px);
+}
+
+.start-your-check-now .wrap-choose-service .start-your-check-now__name {
+  margin-right: auto;
+}
+
+.start-your-check-now .choose-payment-method .start-your-check-now__name {
+  margin-right: 18px;
+}
+
+.start-your-check-now .choose-payment-method .wrap-two-logo img {
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.start-your-check-now .choose-payment-method .wrap-two-logo img:not(:first-child) {
+  margin-left: 14px;
+}
+
+.start-your-check-now .choose-payment-method img {
+  pointer-events: none;
+}
+
+.start-your-check-now label {
+  align-items: center;
+  background-color: #F1F1FF;
+  color: #0C0653;
+  cursor: pointer;
+  display: flex;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 8px;
+  padding: 25px 20px 25px 35px;
+  position: relative;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.start-your-check-now label input {
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+}
+
+.start-your-check-now label input:checked::after {
+  opacity: 1;
+}
+
+.start-your-check-now label input::before {
+  background-color: #fff;
+  border: 3px solid #0C0653;
+  border-radius: 100px;
+  content: "";
+  display: block;
+  height: 0;
+  left: -5px;
+  height: 22px;
+  position: absolute;
+  right: 50px;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 22px;
+}
+
+.start-your-check-now label input::after {
+  background-color: #EEA745;
+  border-radius: 100px;
+  content: "";
+  display: block;
+  height: 0;
+  left: 50%;
+  height: 12px;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 12px;
+}
+
+.start-your-check-now__name,
+.start-your-check-now__price {
+  background-color: inherit;
+  position: relative;
+  z-index: 1;
+}
+
+.start-your-check-now__name {
+  padding: 3px 7px 3px 22px;
+}
+
+.start-your-check-now__price {
+  margin-left: auto;
+  padding: 3px 0 3px 8px;
+  white-space: nowrap;
+}
+
+.start-your-check-now__text-under-title-step {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  margin: -20px 0 0;
+  text-align: center;
+}
+
+.start-your-check-now .custom-wrap-file {
+  margin-top: 40px !important;
+  padding: 0;
+}
+
+.start-your-check-now .custom-wrap-file .wrap-file-and-text,
+.start-your-check-now .custom-wrap-file input {
+  width: 100%;
+}
+
+.start-your-check-now .custom-wrap-file .wrap-file-and-text .text-1 {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.start-your-check-now .custom-wrap-file .wrap-file-and-text .text-2 {
+  font-family: Manrope, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 130%;
+  margin-top: 1px;
+}
+
+.start-your-check-now .wrap-fields,
+.start-your-check-now .wrap-field {
+  margin-top: 40px;
+  position: relative;
+}
+
+.start-your-check-now .wrap-fields input,
+.start-your-check-now .wrap-fields textarea,
+.start-your-check-now .wrap-fields .fake-placeholder,
+.start-your-check-now .wrap-field input,
+.start-your-check-now .wrap-field textarea,
+.start-your-check-now .wrap-field .fake-placeholder {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.start-your-check-now .wrap-fields input::-moz-placeholder, .start-your-check-now .wrap-fields textarea::-moz-placeholder, .start-your-check-now .wrap-field input::-moz-placeholder, .start-your-check-now .wrap-field textarea::-moz-placeholder {
+  color: rgba(46, 41, 55, 0.5);
+}
+
+.start-your-check-now .wrap-fields input::placeholder,
+.start-your-check-now .wrap-fields textarea::placeholder,
+.start-your-check-now .wrap-fields .fake-placeholder,
+.start-your-check-now .wrap-field input::placeholder,
+.start-your-check-now .wrap-field textarea::placeholder,
+.start-your-check-now .wrap-field .fake-placeholder {
+  color: rgba(46, 41, 55, 0.5);
+}
+
+.start-your-check-now .wrap-fields input,
+.start-your-check-now .wrap-fields textarea,
+.start-your-check-now .wrap-field input,
+.start-your-check-now .wrap-field textarea {
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: none;
+  text-align: center;
+}
+
+.start-your-check-now .wrap-fields textarea,
+.start-your-check-now .wrap-field textarea {
+  display: flex;
+  height: 107px;
+  line-height: 130%;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  resize: none;
+}
+
+.start-your-check-now .wrap-fields.active .fake-placeholder,
+.start-your-check-now .wrap-field.active .fake-placeholder {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.start-your-check-now .wrap-fields .fake-placeholder,
+.start-your-check-now .wrap-field .fake-placeholder {
+  left: 50%;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.start-your-check-now .wrap-fields input:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.start-your-check-now__block-step.step-4 .start-your-check-now__text-under-title-step {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 804px;
+}
+
+.start-your-check-now__block-step.step-4 .text-color {
+  color: #0C0653;
+  font-weight: 500;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.start-your-check-now__block-step.step-4 .text-smaller {
+  font-size: 16px;
+  margin: -8px auto 0;
+  max-width: 940px;
+  text-align: center;
+}
+
+.start-your-check-now__block-step.step-5 .start-your-check-now__text-under-title-step {
+  margin: 28px auto 0;
+  max-width: 700px;
+}
+
+.start-your-check-now__block-step .custom-wrap-file,
+.start-your-check-now__block-step input:not([type=radio]),
+.start-your-check-now__block-step textarea {
+  background-color: #fff;
+  border: 1px solid #EEA745;
+  margin: 0 auto;
+  width: 440px;
+}
+
+.start-your-check-now__block-step .custom-wrap-file .wrap-file-and-text,
+.start-your-check-now__block-step textarea {
+  height: 48px;
+}
+
+.start-your-check-now input[type=submit],
+.start-your-check-now button[type=submit],
+.start-your-check-now .n_btn {
+  border: none;
+  cursor: pointer;
+  margin: 60px auto 0;
+  text-transform: none;
+}
+
+.start-your-check-now__title-step {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 81px 0 39px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* Page - Black list */
+
+.black-list-page .first-screen {
+  padding-bottom: 80px;
+  padding-top: 180px;
+}
+
+.black-list-page .first-screen__block {
+  width: 540px;
+}
+
+.black-list-page__head-above-content {
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+
+.black-list-page__search-results {
+  padding-bottom: 76px;
+  padding-top: 50px;
+}
+
+.black-list-page__items {
+  margin-top: 60px;
+}
+
+.black-list-page__item:nth-child(1) p {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 130%;
+  margin: 16px 0 0;
+  text-align: center;
+}
+
+.black-list-page__wrap-search-form {
+  position: relative;
+}
+
+.black-list-page__wrap-search-form.show-results .black-list-page__results-block {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.black-list-page__wrap-search-form form {
+  align-items: center;
+  border: 1px solid #EEA745;
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+.black-list-page__wrap-search-form form input {
+  border: none;
+  outline: none;
+}
+
+.black-list-page__wrap-search-form form input:not([type=submit]) {
+  color: #0C0653;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  width: calc(100% - 28px);
+}
+
+.black-list-page__wrap-search-form form input:not([type=submit])::-moz-placeholder {
+  color: inherit;
+}
+
+.black-list-page__wrap-search-form form input:not([type=submit])::placeholder {
+  color: inherit;
+}
+
+.black-list-page__wrap-search-form form button,
+.black-list-page__wrap-search-form form[type=submit] {
+  align-items: center;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  flex: 0 0 28px;
+  width: 28px;
+}
+
+.black-list-page__results-block {
+  background-color: #fff;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.16);
+  left: 0;
+  opacity: 0;
+  padding: 15px 0 26px;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 59px;
+  transition: 0.2s ease 0s;
+  width: 100%;
+  z-index: 1;
+}
+
+.black-list-page__results-block .wrap-link {
+  border-top: 1px solid #7F7F7F;
+  margin: 0 16px 0;
+  padding-top: 10px;
+  width: 238px;
+}
+
+.black-list-page__results-block a {
+  color: #0C0653;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  text-transform: capitalize;
+}
+
+.black-list-page__results {
+  padding-bottom: 11px;
+  max-height: 310px;
+  overflow-y: auto;
+}
+
+.black-list-page__results li {
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 130%;
+  list-style: none;
+  margin-bottom: 1px;
+  margin-top: 1px;
+  padding: 8px 16px 8px 54px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.black-list-page__results li:hover {
+  background-color: #F8F8FF;
+}
+
+.black-list-page__results li::before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M19.2502 19.2502L15.2691 15.2691M15.2691 15.2691C15.9501 14.5881 16.4903 13.7797 16.8588 12.8899C17.2274 12.0002 17.417 11.0466 17.417 10.0835C17.417 9.12047 17.2274 8.16685 16.8588 7.2771C16.4903 6.38736 15.9501 5.57892 15.2691 4.89794C14.5881 4.21696 13.7797 3.67678 12.8899 3.30823C12.0002 2.93969 11.0466 2.75 10.0835 2.75C9.12047 2.75 8.16685 2.93969 7.2771 3.30823C6.38736 3.67678 5.57892 4.21696 4.89794 4.89794C3.52264 6.27324 2.75 8.13855 2.75 10.0835C2.75 12.0285 3.52264 13.8938 4.89794 15.2691C6.27324 16.6444 8.13855 17.417 10.0835 17.417C12.0285 17.417 13.8938 16.6444 15.2691 15.2691Z' stroke='%237F7F7F' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  height: 22px;
+  left: 20px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 22px;
+}
+
+.black-list-page__results li a {
+  color: inherit;
+}
+
+.black-list-page__no-results {
+  color: #0C0653;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 100%;
+  margin-top: -39px;
+  padding-bottom: 23px;
+}
+
+.black-list-page__itemBlock {
+  border: 1px solid #FFBC5E;
+  height: 100%;
+  padding: 15px;
+  width: 100%;
+}
+
+.black-list-page__itemBlockContent {
+  background-color: #F1F1FF;
+  display: flex;
+  min-height: 100px;
+  padding: 15px;
+}
+
+.black-list-page__itemBlockContent p {
+  color: #0C0653;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+  margin: auto;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.black-list-page__itemBlockContent p a {
+  color: #6C5EFF;
+}
+
+.black-list-page .blog-page__pagination {
+  margin-top: 56px;
+}
+
+.black-list-page .post-page__content {
+  padding-bottom: 45px;
+}
+
+.black-list-page .post-page__content .our-price {
+  margin-bottom: 80px;
+  padding-top: 41px;
+}
+
+.black-list-page .post-page__content .wrap-text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1065px;
+}
+
+.black-list-page .post-page__content .content-first-title {
+  line-height: 130%;
+  margin-bottom: 14px;
+  max-width: 960px;
+}
+
+.black-list-page .post-page__content h1,
+.black-list-page .post-page__content h2:not(.n_sec-title),
+.black-list-page .post-page__content h3:not(.n_sec-above-title),
+.black-list-page .post-page__content h4:not(.content-first-title),
+.black-list-page .post-page__content h5,
+.black-list-page .post-page__content h6 {
+  font-size: 22px;
+  line-height: 110%;
+  margin-bottom: 11px;
+  margin-top: 15px;
+  max-width: 960px;
+}
+
+.scammers {
+  margin-top: 60px;
+}
+
+.scammers .scammer {
+  display: flex;
+}
+
+.scammers .scammer:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.scammers .scammer__blockPhoto {
+  display: block;
+  height: 159px;
+  flex: 0 0 239px;
+  position: relative;
+  width: 239px;
+}
+
+.scammers .scammer__blockPhoto img {
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.scammers .scammer__blockInfo {
+  padding: 1px 0 0 40px;
+}
+
+.scammers .scammer__blockInfo h2 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 0 0 19px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.scammers .scammer__blockInfo h2 a {
+  color: inherit;
+}
+
+.scammers .scammer__blockInfo p {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+/* Page - Scammer */
+
+.scammer-page .first-screen {
+  padding-bottom: 80px;
+  padding-top: 180px;
+}
+
+.scammer-page .first-screen__block {
+  width: 777px;
+}
+
+.scammer-page__info {
+  padding-bottom: 44px;
+  padding-top: 100px;
+}
+
+.scammer-page .section-with-text__title {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 853px;
+}
+
+.scammer-page .its-easy__illustration {
+  left: 0;
+  right: auto;
+  transform: scale(-1, 1);
+}
+
+.scammer-page .our-service__bg {
+  top: calc(50% + 135px);
+}
+
+.scammer-page .post-page__wrap-slider {
+  margin-top: 0;
+  overflow: hidden;
+}
+
+.scammer-page .post-page__wrap-slider .post-page__blockImage {
+  padding-bottom: 21%;
+}
+
+.scammer-page .swiper-conteiner {
+  overflow: hidden;
+}
+
+.scammer-page__confirmation {
+  border: 1px solid #FFBC5E;
+  margin: 39px auto 0;
+  max-width: 946px;
+  padding: 19px;
+}
+
+.scammer-page__confirmation-block {
+  background-color: #F1F1FF;
+  display: flex;
+  min-height: 148px;
+  padding: 20px;
+}
+
+.scammer-page__confirmation-block p {
+  color: #0C0653;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 120%;
+  margin: auto;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.scammer__columnBlockImage {
+  position: relative;
+  width: 100%;
+}
+
+.scammer__columnBlockImage img {
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.scammer__column .blacklist-dating-site-scammers-link {
+  color: #6C5EFF;
+  display: table;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  margin-top: 32px;
+}
+
+.scammer__column .blacklist-dating-site-scammers-link::after {
+  background-color: #7d72fc;
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 2px;
+  width: 100%;
+}
+
+.scammer__list li {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  list-style: none;
+}
+
+.scammer__list li:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.scammer__list li span {
+  color: #0C0653;
+  display: table;
+  font-family: Sora, sans-serif;
+  line-height: 100%;
+  margin-bottom: 12px;
+}
+
+.scammer__gallery {
+  margin-top: 60px;
+}
+
+.scammer__textAboveGallery {
+  color: #0C0653;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 0;
+}
+
+.scammer__description {
+  margin-top: 40px;
+}
+
+.scammer__description .title {
+  color: #0C0653;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 0 0 16px;
+}
+
+.scammer__description p:not(.title) {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+/* Page - 404 */
+
+.page-not-found {
+  background-color: #0c0653;
+}
+
+.page-not-found .first-screen {
+  padding-bottom: 177px;
+}
+
+.page-not-found .first-screen__block {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 575px;
+}
+
+.page-not-found .first-screen__block .n_sec-above-title {
+  font-size: 160px;
+  font-weight: 400;
+  line-height: 100%;
+  text-align: center;
+}
+
+.page-not-found .first-screen__block .n_sec-title {
+  font-size: 45px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.page-not-found .first-screen__block p {
+  margin-top: 23px !important;
+}
+
+.page-not-found .first-screen__block .n_btn {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 38px auto 0;
+  text-transform: none;
 }
 
 /* Footer */
@@ -3894,6 +4683,23 @@ body._touch .header .menu__list > li._active .menu__arrow {
     top: calc(50% + 3px);
   }
 
+  .scammer-page .section-with-text__bg {
+    transform: translate(-50%, -50%) scale(1, 1);
+  }
+
+  .page-not-found .first-screen__block p {
+    margin-top: 24px !important;
+  }
+
+  .page-not-found .first-screen__block p br {
+    display: none;
+  }
+
+  .page-not-found .first-screen__bg {
+    -o-object-position: 0 31%;
+       object-position: 0 31%;
+  }
+
   .footer__item:nth-child(2) {
     display: flex;
     justify-content: space-around;
@@ -3927,6 +4733,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-right: 10px;
     width: calc(50% - 20px);
   }
+
+  .scammer-page .post-page__wrap-slider .post-page__blockImage {
+    margin-bottom: 24px;
+  }
 }
 
 @media screen and (min-width: 721px) {
@@ -3948,6 +4758,24 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .its-easy__item:nth-child(2) {
     width: calc(50% - 30px);
+  }
+
+  .scammer__columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .scammer__column:nth-child(1) {
+    width: 48%;
+  }
+
+  .scammer__column:nth-child(2) {
+    padding-left: 30px;
+    width: 52%;
+  }
+
+  .scammer__columnBlockImage {
+    min-height: 400px;
   }
 }
 
@@ -3981,6 +4809,26 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .blog-page__content .blog__previewBlockImage {
     padding-bottom: calc(63% + 1px);
+  }
+
+  .black-list-page__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .black-list-page__item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .black-list-page__item:nth-child(1) {
+    width: calc(54% - 22px);
+  }
+
+  .black-list-page__item:nth-child(2) {
+    width: calc(46% - 28px);
   }
 
   .footer__items {
@@ -4104,6 +4952,35 @@ body._touch .header .menu__list > li._active .menu__arrow {
     width: calc(50% - 32px);
   }
 
+  .black-list-page__items {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .black-list-page__item {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .black-list-page__item:nth-child(1) {
+    width: calc(54% - 42px);
+  }
+
+  .black-list-page__item:nth-child(2) {
+    width: calc(46% - 48px);
+  }
+
+  .scammer-page .post-page__wrap-slider .post-page__blockImages {
+    margin-left: -10.5px;
+    margin-right: -10.5px;
+  }
+
+  .scammer-page .post-page__wrap-slider .post-page__blockImage {
+    margin-left: 10.5px;
+    margin-right: 10.5px;
+    width: calc(33.3333% - 21px);
+  }
+
   .footer__item:nth-child(1) {
     width: 340px;
   }
@@ -4121,6 +4998,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .its-easy__item:nth-child(2) {
     width: calc(49% - 26px);
+  }
+
+  .scammer__column:nth-child(2) {
+    padding-left: 48px;
   }
 }
 
@@ -5106,6 +5987,41 @@ body._touch .header .menu__list > li._active .menu__arrow {
     -o-object-position: 60% 50%;
        object-position: 60% 50%;
   }
+
+  .prising-page .first-screen__block {
+    width: 100%;
+  }
+
+  .prising-page .first-screen__bg {
+    -o-object-position: 60% 50%;
+       object-position: 60% 50%;
+  }
+
+  .start-your-check-now label {
+    font-size: 20px;
+  }
+
+  .black-list-page .first-screen__bg {
+    -o-object-position: 60% 50%;
+       object-position: 60% 50%;
+  }
+
+  .scammer-page .first-screen__block {
+    width: 100%;
+  }
+
+  .scammer-page .first-screen__bg {
+    -o-object-position: 60% 50%;
+       object-position: 60% 50%;
+  }
+
+  .scammer-page .post-page__wrap-slider .post-page__blockImage {
+    padding-bottom: 31%;
+  }
+
+  .scammer-page__confirmation-block p {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 800.98px) {
@@ -5129,6 +6045,18 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .service-page .first-screen__block {
     width: 100%;
+  }
+
+  .black-list-page__itemBlock {
+    margin-top: 36px;
+  }
+
+  .page-not-found .first-screen__block .n_sec-above-title {
+    font-size: 130px;
+  }
+
+  .page-not-found .first-screen__block .n_sec-title {
+    font-size: 38px;
   }
 
   .footer__wrap-logo {
@@ -5194,6 +6122,102 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .blog-page .first-screen__block {
     width: 100%;
   }
+
+  .start-your-check-now label {
+    font-size: 18px;
+  }
+
+  .black-list-page__head-above-content {
+    padding-bottom: 30px;
+    padding-top: 41px;
+  }
+
+  .black-list-page__search-results {
+    padding-bottom: 36px;
+    padding-top: 31px;
+  }
+
+  .black-list-page__items {
+    margin-top: 27px;
+  }
+
+  .black-list-page__item:nth-child(1) p {
+    font-size: 16px;
+    margin-left: 19px;
+    text-align: left;
+  }
+
+  .black-list-page__no-results {
+    font-size: 24px;
+    margin-top: 0;
+    padding-bottom: 24px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .black-list-page__itemBlockContent {
+    min-height: 76px;
+    padding: 8px 15px;
+  }
+
+  .black-list-page__itemBlockContent p {
+    font-size: 16px;
+  }
+
+  .black-list-page .blog-page__pagination {
+    margin-top: 38px;
+  }
+
+  .black-list-page .post-page__content {
+    padding-bottom: 25px;
+  }
+
+  .black-list-page .post-page__content .our-price {
+    margin-bottom: 64px;
+    padding-top: 0;
+  }
+
+  .scammers {
+    margin-top: 27px;
+  }
+
+  .scammers .scammer:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  .scammers .scammer__blockPhoto {
+    height: 100px;
+    flex: 0 0 110px;
+    width: 110px;
+  }
+
+  .scammers .scammer__blockInfo {
+    padding-left: 16px;
+  }
+
+  .scammers .scammer__blockInfo h2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 9px;
+  }
+
+  .scammers .scammer__blockInfo p {
+    font-size: 14px;
+    -webkit-line-clamp: 2;
+  }
+
+  .scammer-page__info {
+    padding-top: 70px;
+  }
+
+  .scammer__columnBlockImage {
+    padding-bottom: 67%;
+  }
+
+  .scammer__list {
+    margin-top: 28px;
+  }
 }
 
 @media screen and (max-width: 640.98px) {
@@ -5208,6 +6232,25 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .post-page__blockImage {
     padding-bottom: calc(45% - 1px);
+  }
+
+  .scammer-page .post-page__wrap-slider .post-page__blockImage {
+    padding-bottom: calc(67% - 1px);
+  }
+
+  .scammer-page .swiper-conteiner {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  .page-not-found .first-screen__block {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600.98px) {
+  .black-list-page .first-screen__block {
+    width: 100%;
   }
 }
 
@@ -5819,6 +6862,175 @@ body._touch .header .menu__list > li._active .menu__arrow {
     font-size: 24px;
   }
 
+  .prising-page .first-screen {
+    padding-bottom: 60px;
+    padding-top: 160px;
+  }
+
+  .start-your-check-now {
+    padding-bottom: 40px;
+    padding-top: 41px;
+  }
+
+  .start-your-check-now .wrap-choose-service .start-your-check-now__title-step {
+    margin-top: 32px;
+  }
+
+  .start-your-check-now .choose-payment-method .wrap-two-logo img {
+    max-height: 18px;
+  }
+
+  .start-your-check-now .choose-payment-method img {
+    max-height: 30px;
+  }
+
+  .start-your-check-now label {
+    font-size: 16px;
+    padding: 17px 20px 17px 20px;
+  }
+
+  .start-your-check-now label input::before {
+    left: -4px;
+  }
+
+  .start-your-check-now__name {
+    padding-left: 12px;
+  }
+
+  .start-your-check-now__text-under-title-step {
+    font-size: 16px;
+    margin-top: -4px;
+  }
+
+  .start-your-check-now .custom-wrap-file {
+    margin-top: 25px !important;
+  }
+
+  .start-your-check-now .wrap-fields,
+  .start-your-check-now .wrap-field {
+    margin-top: 24px;
+  }
+
+  .start-your-check-now .wrap-fields input:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .start-your-check-now__block-step.step-4 .text-color {
+    line-height: 21px;
+    margin-top: 25px;
+  }
+
+  .start-your-check-now__block-step.step-4 .text-smaller {
+    font-size: 14px;
+    line-height: 130%;
+    margin-top: 14px;
+  }
+
+  .start-your-check-now__block-step.step-5 .start-your-check-now__text-under-title-step {
+    margin-top: 20px;
+  }
+
+  .start-your-check-now input[type=submit],
+  .start-your-check-now button[type=submit],
+  .start-your-check-now .n_btn {
+    margin-top: 36px;
+  }
+
+  .start-your-check-now__title-step {
+    font-size: 24px;
+    margin: 36px 0 24px;
+  }
+
+  .black-list-page .first-screen {
+    padding-bottom: 60px;
+    padding-top: 160px;
+  }
+
+  .scammer-page .first-screen {
+    padding-bottom: 60px;
+    padding-top: 160px;
+  }
+
+  .scammer-page__info {
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+
+  .scammer-page .post-page__wrap-slider {
+    margin-top: 36px;
+  }
+
+  .scammer-page__confirmation {
+    margin-top: 33px;
+    padding: 15px;
+  }
+
+  .scammer-page__confirmation-block {
+    min-height: 116px;
+    padding: 16px 25px;
+  }
+
+  .scammer-page__confirmation-block p {
+    font-size: 18px;
+  }
+
+  .scammer__column .blacklist-dating-site-scammers-link {
+    margin-top: 19px;
+  }
+
+  .scammer__column .blacklist-dating-site-scammers-link::after {
+    width: 59%;
+  }
+
+  .scammer__list li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .scammer__list li span {
+    margin-bottom: 8px;
+  }
+
+  .scammer__gallery {
+    margin-top: 36px;
+  }
+
+  .scammer__description {
+    margin-top: 36px;
+  }
+
+  .scammer__description .title {
+    margin-bottom: 12px;
+  }
+
+  .scammer__description p:not(.title) {
+    font-size: 16px;
+  }
+
+  .page-not-found .first-screen {
+    padding-bottom: 150px;
+    padding-top: 212px;
+  }
+
+  .page-not-found .first-screen__block {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .page-not-found .first-screen__block .n_sec-above-title {
+    font-size: 80px;
+    line-height: 130%;
+    letter-spacing: 1px;
+  }
+
+  .page-not-found .first-screen__block .n_sec-title {
+    font-size: 28px;
+    margin-top: 17px;
+  }
+
+  .page-not-found .first-screen__block .n_btn {
+    margin-top: 32px;
+  }
+
   .footer {
     padding-top: 65px;
   }
@@ -5874,6 +7086,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .post-page .its-easy__blockVideo {
     margin-top: 34px;
     padding-bottom: calc(56% + 1px);
+  }
+
+  .start-your-check-now__block-step .custom-wrap-file,
+  .start-your-check-now__block-step input:not([type=radio]),
+  .start-your-check-now__block-step textarea {
+    width: 100%;
   }
 
   .footer__wrap-social {
